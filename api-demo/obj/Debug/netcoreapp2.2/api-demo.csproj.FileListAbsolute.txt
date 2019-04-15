@@ -1,0 +1,14 @@
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.csprojAssemblyReference.cache
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.csproj.CoreCompileInputs.cache
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.RazorAssemblyInfo.cache
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.RazorAssemblyInfo.cs
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.AssemblyInfoInputs.cache
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.AssemblyInfo.cs
+/home/sikor/Documents/dotnet-demo/api-demo/bin/Debug/netcoreapp2.2/api-demo.deps.json
+/home/sikor/Documents/dotnet-demo/api-demo/bin/Debug/netcoreapp2.2/api-demo.runtimeconfig.json
+/home/sikor/Documents/dotnet-demo/api-demo/bin/Debug/netcoreapp2.2/api-demo.runtimeconfig.dev.json
+/home/sikor/Documents/dotnet-demo/api-demo/bin/Debug/netcoreapp2.2/api-demo.dll
+/home/sikor/Documents/dotnet-demo/api-demo/bin/Debug/netcoreapp2.2/api-demo.pdb
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.RazorTargetAssemblyInfo.cache
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.dll
+/home/sikor/Documents/dotnet-demo/api-demo/obj/Debug/netcoreapp2.2/api-demo.pdb
