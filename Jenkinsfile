@@ -28,14 +28,7 @@ pipeline {
         //   }
         //   k8sBuildGolang("go-demo")
         // }
-         container(name: 'kaniko',  args: [
-            "--dockerfile=api-demo/Dockerfile",
-            "--context=.",
-            "--insecure",
-            "--skip-tls-verify",
-            "--cache=true",
-            "--destination=index.docker.io/sikor1111/dotnet-demo:beta"]){
-          withEnv(['PATH+EXTRA=/busybox:/kaniko']) {                
+         container(name: 'kaniko') {                
     // sh '''#!/busybox/sh
     // ls -all /kaniko/
     // cat /kaniko/.docker/config.json
