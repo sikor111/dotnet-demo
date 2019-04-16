@@ -50,4 +50,4 @@ export LB_IP=$(minikube ip)
 # Destroy the cluster #
 #######################
 
-kubectl create secret docker-registry regcred --docker-server=index.docker.io/v1/ --docker-username=sikor1111 --docker-password=s --docker-email=itmaciej.sikora@gmail.com
+kubectl create secret docker-registry regcred --docker-server=index.docker.io --docker-username=sikor1111 --docker-password= --docker-email=itmaciej.sikora@gmail.com
