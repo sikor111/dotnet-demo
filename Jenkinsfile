@@ -31,6 +31,7 @@ pipeline {
          container(name: 'kaniko', shell: '/busybox/sh'){
           withEnv(['PATH+EXTRA=/busybox:/kaniko']) {                
     sh '''#!/busybox/sh
+    ls -all /root/
     cat /root/.docker/config.json
     /kaniko/executor -f `pwd`/api-demo/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=index.docker.io/sikor1111/dotnet-demo:beta
     '''
