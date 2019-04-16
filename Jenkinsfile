@@ -28,10 +28,11 @@ pipeline {
         //   }
         //   k8sBuildGolang("go-demo")
         // }
-        container("kaniko") {
-                          
+         container(name: 'kaniko', shell: '/busybox/sh')
+          withEnv(['PATH+EXTRA=/busybox:/kaniko']) {                
     sh '''#!/busybox/sh/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=index.docker.io/v1/sikor1111/mastering-docker:beta'''
         }
+      }
       }
     }
     // stage("func-test") {
