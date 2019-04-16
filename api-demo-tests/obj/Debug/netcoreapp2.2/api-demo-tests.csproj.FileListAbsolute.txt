@@ -1,0 +1,14 @@
+/home/sikor/Documents/dotnet-demo/api-demo-tests/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/sikor/Documents/dotnet-demo/api-demo-tests/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/home/sikor/Documents/dotnet-demo/api-demo-tests/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/home/sikor/Documents/dotnet-demo/api-demo-tests/bin/Debug/netcoreapp2.2/api-demo-tests.deps.json
+/home/sikor/Documents/dotnet-demo/api-demo-tests/bin/Debug/netcoreapp2.2/api-demo-tests.runtimeconfig.json
+/home/sikor/Documents/dotnet-demo/api-demo-tests/bin/Debug/netcoreapp2.2/api-demo-tests.runtimeconfig.dev.json
+/home/sikor/Documents/dotnet-demo/api-demo-tests/bin/Debug/netcoreapp2.2/api-demo-tests.dll
+/home/sikor/Documents/dotnet-demo/api-demo-tests/bin/Debug/netcoreapp2.2/api-demo-tests.pdb
+/home/sikor/Documents/dotnet-demo/api-demo-tests/obj/Debug/netcoreapp2.2/api-demo-tests.csprojAssemblyReference.cache
+/home/sikor/Documents/dotnet-demo/api-demo-tests/obj/Debug/netcoreapp2.2/api-demo-tests.csproj.CoreCompileInputs.cache
+/home/sikor/Documents/dotnet-demo/api-demo-tests/obj/Debug/netcoreapp2.2/api-demo-tests.AssemblyInfoInputs.cache
+/home/sikor/Documents/dotnet-demo/api-demo-tests/obj/Debug/netcoreapp2.2/api-demo-tests.AssemblyInfo.cs
+/home/sikor/Documents/dotnet-demo/api-demo-tests/obj/Debug/netcoreapp2.2/api-demo-tests.dll
+/home/sikor/Documents/dotnet-demo/api-demo-tests/obj/Debug/netcoreapp2.2/api-demo-tests.pdb
