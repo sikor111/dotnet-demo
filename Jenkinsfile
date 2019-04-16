@@ -28,13 +28,14 @@ pipeline {
         //   }
         //   k8sBuildGolang("go-demo")
         // }
-         container(name: 'kaniko') {                
+         container(name: 'kaniko'){
+                     
     // sh '''#!/busybox/sh
     // ls -all /kaniko/
     // cat /kaniko/.docker/config.json
     // /kaniko/executor -f `pwd`/api-demo/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=index.docker.io/sikor1111/dotnet-demo:beta
     // '''
-        }
+        
       }
       }
     }
