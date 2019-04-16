@@ -7,7 +7,7 @@ pipeline {
   }
   agent {
     kubernetes {
-      cloud "dotnet-api"
+      cloud "kubernetes"
       label "kubernetes"
       serviceAccount "qa-infrastructure-jenkins"
       yamlFile "KubernetesPod.yaml"
