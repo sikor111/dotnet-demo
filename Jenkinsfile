@@ -28,7 +28,7 @@ pipeline {
         //   }
         //   k8sBuildGolang("go-demo")
         // }
-         container(name: 'kaniko', args:  args: 
+         container(name: 'kaniko',  args: [
             "--dockerfile=api-demo/Dockerfile",
             "--context=.",
             "--insecure",
