@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: kaniko
-    image: gcr.io/kaniko-project/executor
+    image: gcr.io/kaniko-project/executor:841cfb3f53951fe24b8da82216ce278947d560f2
     args: ["--dockerfile=api-demo/Dockerfile",
             "--context=.",
             "--insecure",
