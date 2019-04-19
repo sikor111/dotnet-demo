@@ -13,8 +13,6 @@ pipeline {
       yamlFile "KubernetesPod.yaml"
     }      
   }
-  environment {
-  }
   stages {
     stage("build") {
       steps {
