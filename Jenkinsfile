@@ -22,21 +22,17 @@ pipeline {
   stages {
     stage("build") {
       steps {
-        // container("golang") {
-        //   script {
-        //     currentBuild.displayName = new SimpleDateFormat("yy.MM.dd").format(new Date()) + "-${env.BUILD_NUMBER}"
-        //   }
-        //   k8sBuildGolang("go-demo")
-        // }
-         container(name: 'kaniko'){
-         sh "while true; do sleep 30; done"
-    // sh '''#!/busybox/sh
-    // ls -all /kaniko/
-    // cat /kaniko/.docker/config.json
-    // /kaniko/executor -f `pwd`/api-demo/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=index.docker.io/sikor1111/dotnet-demo:beta
-    // '''
-        
-      }
+        container('docker'){
+            sh "docker image build -t ${sikor1111}/dotnet-demo:beta"
+            withCredentials([usernamePassword(
+                credentialsId: "docker",
+                usernameVariavble: "USER",
+                passwordVariable: "PASS"
+            )]){
+                sh "docker login -u '$USER' -p '$PASS'"
+            }
+            sh "docker image push sikor1111/dotnet-demo:beta"
+        }
       }
     }
     // stage("func-test") {
@@ -59,18 +55,6 @@ pipeline {
     //     }
     //   }
     // }
-    stage("release") {
-      when {
-          branch "master"
-      }
-      steps {
-        container("kaniko") {
-          k8sPushImage(image, false)
-        }
-        container("helm") {
-          k8sPushHelm(project, "", cmAddr, true, true)
-        }
-      }
-    }
+    
   }
 }

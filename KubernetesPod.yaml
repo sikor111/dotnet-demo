@@ -6,24 +6,13 @@ metadata:
 spec:
   containers:
   - name: kaniko
-    image: gcr.io/kaniko-project/executor:debug
-    command: [ "/busybox/sh", "-c", "--" ]
-    args: [ "while true; do sleep 30; done;" ]
-    # args: ["--dockerfile=api-demo/Dockerfile",
-    #         "--context=.",
-    #         "--insecure",
-    #         "--skip-tls-verify",
-    #         "--cache=true",
-    #         "--destination=index.docker.io/sikor1111/dotnet-demo:beta"]
+    image: docker:edge-git
+    command: ["cat"]
+    tty: true
     volumeMounts:
-      - name: jenkins-docker-cfg
+      - name: docker_socket
         mountPath: /kaniko
   volumes:
-  - name: jenkins-docker-cfg
-    projected:
-      sources:
-      - secret:
-        name: regcred
-        items:
-          - key: .dockerconfigjson
-            path: .docker/config.json
+  - name: docker_socket
+    hostPath:
+        path: /var/run/docker.sock
