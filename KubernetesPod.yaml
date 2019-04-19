@@ -7,7 +7,8 @@ spec:
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
-    command: ["cat"]
+    command: ["pause"]
+    args: ["1000000"]
     # args: ["--dockerfile=api-demo/Dockerfile",
     #         "--context=.",
     #         "--insecure",
