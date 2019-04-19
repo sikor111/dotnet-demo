@@ -7,7 +7,7 @@ spec:
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
-    command: [ "/bin/bash", "-c", "--" ]
+    command: [ "/bin/sh", "-c", "--" ]
     args: [ "while true; do sleep 30; done;" ]
     # args: ["--dockerfile=api-demo/Dockerfile",
     #         "--context=.",
