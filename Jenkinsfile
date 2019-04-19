@@ -35,26 +35,5 @@ pipeline {
         }
       }
     }
-    // stage("func-test") {
-    //   steps {
-    //     container("helm") {
-    //       k8sUpgradeBeta(project, domain, "--set replicaCount=2 --set dbReplicaCount=1")
-    //     }
-    //     container("kubectl") {
-    //       k8sRolloutBeta(project)
-    //     }
-    //     container("golang") {
-    //       k8sFuncTestGolang(project, domain)
-    //     }
-    //   }
-    //   post {
-    //     always {
-    //       container("helm") {
-    //         k8sDeleteBeta(project)
-    //       }
-    //     }
-    //   }
-    // }
-    
   }
 }

@@ -1,19 +1,16 @@
 apiVersion: v1
 kind: Pod
-metadata:
-  name: jenkins-build
-  namespace: qa-ingrastructure
 spec:
   containers:
   - name: docker
-    image: docker:edge-git
+    image: docker:18.06
     command: ["cat"]
     tty: true
     volumeMounts:
-      - name: docker_socket
-        mountPath: /var/run/docker.sock
+    - mountPath: /var/run/docker.sock
+      name: docker-socket
   volumes:
-  - name: docker_socket
+  - name: docker-socket
     hostPath:
-        path: /var/run/docker.sock
-        type: Socket
+      path: /var/run/docker.sock
+      type: Socket
