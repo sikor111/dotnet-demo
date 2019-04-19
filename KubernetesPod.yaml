@@ -11,8 +11,9 @@ spec:
     tty: true
     volumeMounts:
       - name: docker_socket
-        mountPath: /kaniko
+        mountPath: /var/run/docker.sock
   volumes:
   - name: docker_socket
     hostPath:
         path: /var/run/docker.sock
+        type: Socket
