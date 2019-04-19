@@ -29,7 +29,7 @@ pipeline {
         //   k8sBuildGolang("go-demo")
         // }
          container(name: 'kaniko'){
-                     
+         sh "while true; do sleep 30; done"
     // sh '''#!/busybox/sh
     // ls -all /kaniko/
     // cat /kaniko/.docker/config.json
