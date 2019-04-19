@@ -5,7 +5,7 @@ metadata:
   namespace: qa-ingrastructure
 spec:
   containers:
-  - name: kaniko
+  - name: docker
     image: docker:edge-git
     command: ["cat"]
     tty: true
